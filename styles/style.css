@@ -12,6 +12,33 @@ a {
     text-decoration: none;
 }
 
+/* CSS */
+button {
+    background-color: #00000000;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    outline: 0;
+    padding: 5px 19px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+button:hover {
+    border-color: #06f;
+    color: #06f;
+}
+
+button:active {
+    border-color: #aeccf9;
+    color: #aeccf9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,12 +71,44 @@ a {
     transform: translate(-50%, -50%);
 }
 
+/* header */
+
+header {
+    padding: 30px;
+    background-color: rgba(0, 0, 255, 0.308);
+}
+
+header,
+header ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 30%;
+}
+
+header h3,header h1 {
+    transition: all .3s;
+}
+
+header h3:hover,header h1:hover {
+    color: #06f;
+}
+
+header h3:active,header h1:active {
+    color: #aeccf9;
+
+}
+
 main {
     padding: 0 80px;
     height: 100%;
-    border-left: 3.55px solid blueviolet;
+    /* border-left: 3.55px solid blueviolet;
     border-right: 3.55px solid blueviolet;
-    background-color: #bf4fcebd;
+    background-color: #bf4fcebd; */
 }
 
 /* footer */
