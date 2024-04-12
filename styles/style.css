@@ -12,7 +12,6 @@ a {
     text-decoration: none;
 }
 
-/* CSS */
 button {
     background-color: #00000000;
     border: 2px solid #ffffff;
@@ -59,16 +58,14 @@ button:active {
 }
 
 .container {
+    max-width: 2040px;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
 }
 
 /* header */
@@ -76,6 +73,8 @@ button:active {
 header {
     padding: 30px;
     background-color: rgba(0, 0, 255, 0.308);
+    position: sticky;
+    top: 0;
 }
 
 header,
@@ -100,15 +99,27 @@ header h3:hover,header h1:hover {
 
 header h3:active,header h1:active {
     color: #aeccf9;
-
 }
+
+/* main */
 
 main {
     padding: 0 80px;
-    height: 100%;
+    width: 70%;
     /* border-left: 3.55px solid blueviolet;
     border-right: 3.55px solid blueviolet;
     background-color: #bf4fcebd; */
+}
+
+main section {
+    min-height: 230px;
+    padding: 60px;
+    margin: 20px auto;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    border: 8px solid rgb(193, 38, 193);
+    background-color: rgba(22, 1, 22, 0.744);
 }
 
 /* footer */
