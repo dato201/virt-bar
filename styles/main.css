@@ -89,34 +89,46 @@ header nav {
     width: 30%;
 }
 
-header h3,header h1 {
+.min {
+    border-bottom: 3px solid white;
+}
+
+.min:hover {
+    border-width: 3px;
+}
+
+header h3,
+header h1 {
     transition: all .3s;
 }
 
-header h3:hover,header h1:hover {
+header h3:hover,
+header h1:hover {
     color: #06f;
+    border-color: #06f;
+    border-bottom: 1px solid #06f;
 }
 
-header h3:active,header h1:active {
+header h3:active,
+header h1:active {
     color: #aeccf9;
+    border-color: #aeccf9;
 }
 
 /* main */
 
 main {
     padding: 0 80px;
-    width: 70%;
-    /* border-left: 3.55px solid blueviolet;
-    border-right: 3.55px solid blueviolet;
-    background-color: #bf4fcebd; */
+    min-width: 70%;
+    max-width: 80%;
 }
 
 main section {
     min-height: 230px;
+    height: 100%;
     padding: 60px;
     margin: 20px auto;
-    width: 80%;
-    height: 100%;
+    width: 100%;
     border-radius: 20px;
     border: 8px solid rgb(193, 38, 193);
     background-color: rgba(22, 1, 22, 0.744);
