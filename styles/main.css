@@ -13,6 +13,7 @@ a {
 }
 
 button {
+    border-radius: 6px;
     background-color: #00000000;
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -130,7 +131,7 @@ main section {
     margin: 20px auto;
     width: 100%;
     border-radius: 20px;
-    border: 8px solid rgb(193, 38, 193);
+    border: 5px solid #c126c1;
     background-color: rgba(22, 1, 22, 0.744);
 }
 
