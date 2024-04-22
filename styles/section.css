@@ -48,7 +48,38 @@ main section h1 {
     overflow-x: scroll;
 }
 
-.card {
+.Newses {
+    margin-top: 60px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* .News {
+    border-radius: 20px;
+    padding: 15px;
+    border: 5px solid #c126c1;
+    width: 100%;
+    height: 240px;
+    flex: 0 1 240px;
+} */
+
+.catalog2 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.catalog2 .card, .Newses .card {
+    width: 240px;
+    flex: none;
+}
+
+.card, .News {
     border-radius: 20px;
     padding: 15px;
     border: 5px solid #c126c1;
@@ -68,7 +99,7 @@ main section h1 {
     height: 60%;
     border-radius: 20px 20px 0 0;
     background-color: white;
-} 
+}
 
 .card div {
     display: grid;
@@ -78,7 +109,7 @@ main section h1 {
     grid-row-gap: 0px;
     gap: 8px;
 }
-    
+
 .card h3 { grid-area: 1 / 1 / 2 / 3; }
 .card p { grid-area: 2 / 1 / 3 / 3; }
 .card .h3_2 { grid-area: 3 / 1 / 4 / 2; }
