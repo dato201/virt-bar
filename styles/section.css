@@ -63,7 +63,7 @@ main section h1 {
     border: 5px solid #c126c1;
     width: 100%;
     height: 240px;
-    flex: 0 1 240px;
+    flex: 0 1 240px;    
 } */
 
 .catalog2 {
@@ -76,7 +76,10 @@ main section h1 {
 
 .catalog2 .card, .Newses .card {
     width: 240px;
+    /* height: 200px; */
     flex: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card, .News {
