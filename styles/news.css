@@ -1,6 +1,11 @@
-.h7 {
+/* .h7 {
     position: relative;
     text-align: right;
     top: 60px;
     color: #ffffff8c;
+    padding-bottom: 30px;
+} */
+
+section p {
+    margin-top: 50px;
 }
