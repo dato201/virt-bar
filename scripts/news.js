@@ -26,9 +26,6 @@ let news = [
     },
 
 ];
-let title = document.getElementById('title');
-let text = document.getElementById('text');
-let data2 = document.getElementById('data');
 
 localStorage.setItem("newsData", JSON.stringify(news));
 
