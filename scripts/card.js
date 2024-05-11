@@ -5,6 +5,7 @@ let card = [
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
         grade: 5,
+        new: true
     },
     {
         image: "https://png.pngitem.com/pimgs/s/7-78179_wine-bottle-png-image-white-wine-bottle-png.png",
@@ -12,14 +13,18 @@ let card = [
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
         grade: 5,
+        new: false
+
     },
 
     {
         image: "https://www.pngall.com/wp-content/uploads/15/Wine-Bottle-PNG-Images.png",
         name: "Lorem ipsum",
         title: "Lorem ipsum dolor sit amet.",
-        price: 13.00,
+        price: 7.00,
         grade: 5,
+        new: false
+
     },
     {
         image: "https://png.pngtree.com/png-vector/20240207/ourlarge/pngtree-red-wine-drink-bottle-png-image_11680582.png",
@@ -27,6 +32,7 @@ let card = [
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
         grade: 5,
+        new: true
     },
 
     {
@@ -35,6 +41,7 @@ let card = [
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
         grade: 5,
+        new: false
     },
 
     {
@@ -43,22 +50,28 @@ let card = [
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
         grade: 5,
+        new: false
+
     },
 
     {
         image: "https://e1.pngegg.com/pngimages/87/504/png-clipart-champagne-bottles-gold-and-black-wine-bottle-illustration.png",
         name: "Lorem ipsum",
         title: "Lorem ipsum dolor sit amet.",
-        price: 13.00,
+        price: 20,
         grade: 5,
+        new: false
+
     },
 
     {
         image: "https://png.pngtree.com/element_our/20200609/ourlarge/pngtree-red-wine-bottle-image_2224353.jpg",
         name: "Lorem ipsum",
         title: "Lorem ipsum dolor sit amet.",
-        price: 13.00,
+        price: 15.20,
         grade: 5,
+        new: false
+
     },
 
     {
@@ -67,6 +80,7 @@ let card = [
         title: "Lorem ipsum dolor sit amet.",
         price: 13.19,
         grade: 5,
+        new: true
     },
 
     {
@@ -75,6 +89,7 @@ let card = [
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
         grade: 5,
+        new: false
     },
 
     {
@@ -83,31 +98,42 @@ let card = [
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
         grade: 5,
+        new: false
     },
-
 ];
+
 
 localStorage.setItem("card", JSON.stringify(card));
 
 let cardData = localStorage.getItem('card');
 
 cardData = JSON.parse(cardData);
-console.log(cardData);
+console.log([cardData]);
 
 let div = "";
 for (let i = 0; i < cardData.length; i++) {
     div += `
     <div class="card">
     <div class="card_img" style="background-image: url('${cardData[i].image}');"></div>
-    <div>
+        <div class="card_div_container">
             <h3>${cardData[i].name}</h3>
+
             <p>${cardData[i].title}</p>
+
+            <div class="cart_div">
             <h3 class="h3_2">${cardData[i].price} ₾</h3>
-            <h3 class="h3_3"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <h3 class="h3_3">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
             </h3>
+            </div>
         </div>
     </div>
 `;
 }
 
 document.getElementById("demo").innerHTML = div;
+document.getElementById("demo2").innerHTML = div;
