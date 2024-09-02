@@ -4,7 +4,7 @@ let card = [
         name: "Lorem ipsum 1",
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
-        grade: 5,
+        grade: 8,
         new: true
     },
     {
@@ -12,7 +12,7 @@ let card = [
         name: "Lorem ipsum 2",
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
-        grade: 5,
+        grade: 7,
         new: false
 
     },
@@ -22,7 +22,7 @@ let card = [
         name: "Lorem ipsum 3",
         title: "Lorem ipsum dolor sit amet.",
         price: 7.00,
-        grade: 5,
+        grade: 8.9,
         new: false
 
     },
@@ -31,7 +31,7 @@ let card = [
         name: "Lorem ipsum 4",
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
-        grade: 5,
+        grade: 8.7,
         new: true
     },
 
@@ -40,7 +40,7 @@ let card = [
         name: "Lorem ipsum 5",
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
-        grade: 5,
+        grade: 10,
         new: false
     },
 
@@ -49,7 +49,7 @@ let card = [
         name: "Lorem ipsum 6",
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
-        grade: 5,
+        grade: 6.3,
         new: false
 
     },
@@ -59,7 +59,7 @@ let card = [
         name: "Lorem ipsum 7",
         title: "Lorem ipsum dolor sit amet.",
         price: 20,
-        grade: 5,
+        grade: 9.5,
         new: false
 
     },
@@ -69,7 +69,7 @@ let card = [
         name: "Lorem ipsum 8",
         title: "Lorem ipsum dolor sit amet.",
         price: 15.20,
-        grade: 5,
+        grade: 10,
         new: false
 
     },
@@ -79,7 +79,7 @@ let card = [
         name: "Lorem ipsum 9",
         title: "Lorem ipsum dolor sit amet.",
         price: 13.19,
-        grade: 5,
+        grade: 6,
         new: true
     },
 
@@ -88,7 +88,7 @@ let card = [
         name: "Lorem ipsum 10",
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
-        grade: 5,
+        grade: 4,
         new: false
     },
 
@@ -97,7 +97,7 @@ let card = [
         name: "Lorem ipsum 11",
         title: "Lorem ipsum dolor sit amet.",
         price: 13.00,
-        grade: 5,
+        grade: 7.5,
         new: false
     },
 ];
@@ -122,13 +122,7 @@ for (let i = 0; i < cardData.length; i++) {
 
             <div class="cart_div">
             <h3 class="h3_2">${cardData[i].price} ₾</h3>
-            <h3 class="h3_3">
-            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-            </h3>
+            <h3 class="h3_3">${cardData[i].grade} /10 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></h3>
             </div>
         </div>
     </div>
