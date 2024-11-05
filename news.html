@@ -14,6 +14,27 @@
 <body>
     <div class="background_img"></div>
 
+    <!-- sign up -->
+    <div id="backgroundLogin">
+        <div id="SignUp" class="form">
+            <h1>Sign Up</h1>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>submit</button>
+            <p>You are not<a onclick="LogIn()" style="color: #06f;cursor: pointer;"> Log In</a></p>
+        </div>
+
+        <div id="LogIn" class="form ">
+            <h1>Log In</h1>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>submit</button>
+            <p>You are not<a onclick="SignUp()" style="color: #06f;cursor: pointer;"> Sign Up</a></p>
+        </div>
+    </div>
+
     <div class="container">
         <!-- header -->
         <header>
@@ -34,8 +55,8 @@
                 </ul>
             </nav>
             <div class="auth">
-                <a href=""><button>Sign Up</button></a>
-                <a href=""><button>Log In</button></a>
+                <button onclick="SignUp()">Sign Up</button>
+                <button onclick="LogIn()">Log In</button>
             </div>
         </header>
         <!-- main -->
@@ -98,6 +119,7 @@
         </footer>
     </div>
     <script src="scripts/news.js"></script>
+    <script src="scripts/SignUp.js"></script>
 </body>
 
 </html>
