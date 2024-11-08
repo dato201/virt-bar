@@ -17,5 +17,9 @@ let LogIn1 = document.getElementById("LogIn");
 window.onclick = function (event) {
     if (event.target == backgroundLogin) {
         backgroundLogin.style.display = "none";
+    } else if (event.target == headerNav) {
+        headerNav.style.display = "none";
+        document.getElementById("br").style.display = "block";
+        document.getElementById("x").style.display = "none";
     }
 }

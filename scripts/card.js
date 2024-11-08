@@ -108,7 +108,6 @@ localStorage.setItem("card", JSON.stringify(card));
 let cardData = localStorage.getItem('card');
 
 cardData = JSON.parse(cardData);
-console.log([cardData]);
 
 let div = "";
 for (let i = 0; i < cardData.length; i++) {

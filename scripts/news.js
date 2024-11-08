@@ -33,8 +33,6 @@ localStorage.setItem("newsData", JSON.stringify(news));
 let data = localStorage.getItem('newsData');
 data = JSON.parse(data);
 
-console.log(data);
-
 let div = "";
 for (let i = 0; i < data.length; i++) {
     div += `
@@ -44,6 +42,5 @@ for (let i = 0; i < data.length; i++) {
     </section>
 `;
 }
-// div += "</section>";
 
 document.getElementById("demo").innerHTML = div;

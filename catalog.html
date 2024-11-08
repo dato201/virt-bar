@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/section.css">
     <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 
 <body>
@@ -38,10 +39,14 @@
     <div class="container">
         <!-- header -->
         <header>
+            <div style="display: flex;align-items: center;justify-content: center;">
+                <h3 onclick="burger()" id="br" class="burger"><i class="fa-solid fa-bars"></i></h3>
+                <h3 onclick="xmark()" id="x" class="burger x"><i class="fa-solid fa-xmark"></i></h3>
             <a href=".">
                 <h1>virt bar</h1>
             </a>
-            <nav>
+            </div>
+            <nav id="header_nav">
                 <ul>
                     <li><a href=".">
                             <h3>home</h3>
@@ -56,7 +61,7 @@
             </nav>
             <div class="auth">
                 <button onclick="SignUp()">Sign Up</button>
-                <button onclick="LogIn()">Log In</button>
+                <button class="log" onclick="LogIn()">Log In</button>
             </div>
         </header>
         <!-- main -->
@@ -67,11 +72,11 @@
                     <div class="catalog2" id="demo"></div>
 
                     <div class="said">
-                        <a href=""><button>&#10094;&#10094;</button></a>
+                        <a href="" class="saod_button"><button>&#10094;&#10094;</button></a>
                         <a href=""><button>&#10094;</button></a>
                         <h3>1/5</h3>
                         <a href=""><button>&#10095;</button></a>
-                        <a href=""><button>&#10095;&#10095;</button></a>
+                        <a href="" class="saod_button"><button>&#10095;&#10095;</button></a>
                     </div>
 
                 </div>
@@ -135,6 +140,7 @@
     </div>
     <script src="scripts/card.js"></script>
     <script src="scripts/SignUp.js"></script>
+    <script src="scripts/burger.js"></script>
 </body>
 
 </html>

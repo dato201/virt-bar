@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e77ac3a5f0.js" crossorigin="anonymous"></script>
+    <meta name="description" content="virtual bar">
+    <meta name="keywords" content="virtual bar,virt-bar,virt bar">
+    <meta name="author" content="Davit balxamishvili">
     <title>virt bar</title>
+    <script src="https://kit.fontawesome.com/e77ac3a5f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/section.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 
 <body>
@@ -37,10 +41,14 @@
     <div class="container">
         <!-- header -->
         <header>
+            <div style="display: flex;align-items: center;justify-content: center;">
+                <h3 onclick="burger()" id="br" class="burger"><i class="fa-solid fa-bars"></i></h3>
+                <h3 onclick="xmark()" id="x" class="burger x"><i class="fa-solid fa-xmark"></i></h3>
             <a href="">
                 <h1>virt bar</h1>
             </a>
-            <nav>
+            </div>
+            <nav id="header_nav">
                 <ul>
                     <li><a href=".">
                             <h3 class="min">home</h3>
@@ -55,7 +63,7 @@
             </nav>
             <div class="auth">
                 <button onclick="SignUp()">Sign Up</button>
-                <button onclick="LogIn()">Log In</button>
+                <button class="log" onclick="LogIn()">Log In</button>
             </div>
         </header>
         <!-- main -->
@@ -130,6 +138,7 @@
     </div>
     <script src="scripts/card.js"></script>
     <script src="scripts/SignUp.js"></script>
+    <script src="scripts/burger.js"></script>
 </body>
 
 </html>

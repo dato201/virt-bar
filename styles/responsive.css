@@ -1,0 +1,84 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* tablets */
+
+@media (max-width: 744px) {
+    main {
+        max-width: 100%;
+    }
+
+    header nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        background-color: #05bdcac9;
+        border: #00eeff solid 5px;
+        border-radius: 0 0 20px 0;
+        display: none;
+    }
+
+    header ul {
+        width: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        gap: 10px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .x {
+        font-size: 20px;
+        display: none;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 650px) {
+    .log {
+        display: none;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    main section {
+        padding: 20px;
+    }
+
+    footer section {
+        gap: 20px 30px;
+    }
+
+    .footer_section {
+        height: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 425px) {
+    .saod_button {
+        display: none;
+    }
+}
